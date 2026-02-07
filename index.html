@@ -49,6 +49,18 @@
         }
 
         map.on('locationerror', onLocationError);
+
+    var foodIcon = L.icon({
+        iconUrl: 'food-icon.png',
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -40] 
+    });
+    L.marker([53.8375, -1.7900], {icon: foodIcon}).addTo(map)
+        .bindPopup("Digin's Hut");
+    L.marker([53.8379, -1.7899], {icon: foodIcon}).addTo(map)
+    .bindPopup("Salts Vilage Bakery");
+        
     </script>
 </body>
 </html>
